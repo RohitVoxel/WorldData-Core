@@ -15,6 +15,9 @@ Minecraft loads and owns the world. WorldData Core (WDC) reads what Minecraft al
 | API package | `net.wdc.core.api` (entry class `WDC`) |
 | License | API: MIT. Everything else: LGPL-3.0-or-later |
 
+## Example mod: 
+https://github.com/RohitVoxel/WorldData-Core-Facade
+
 ## Contents
 
 1. [Features](#features)
