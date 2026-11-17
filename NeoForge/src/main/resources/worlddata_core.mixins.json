@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.wdc.core.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "mixins": [
+    "LevelChunkBlockChangeMixin",
+    "LevelHotReadMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

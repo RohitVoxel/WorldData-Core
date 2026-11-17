@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "net.wdc.core.debug.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "DebugHudMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

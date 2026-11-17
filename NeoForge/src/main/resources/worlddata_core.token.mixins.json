@@ -1,0 +1,9 @@
+{
+  "required": false,
+  "package": "net.wdc.core.mixin.token",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "mixins": [
+    "BlockStateBaseTokenMixin"
+  ]
+}

@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mixins]]
+config="worlddata_core.mixins.json"
+
+[[mixins]]
+config="worlddata_core.token.mixins.json"
+
+[[mixins]]
+config="worlddata_core.client.mixins.json"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+logoFile="assets/worlddata_core/icon.png"
+authors="Rohit_1597"
+description='''
+A shared world data cache and read-only API for other mods. It keeps a compact copy of what Minecraft already knows about loaded chunks, blocks, fluids, biomes and light, so mods can ask Core instead of scanning the world themselves. The optional vanilla read redirect is off by default.
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="${neo_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"

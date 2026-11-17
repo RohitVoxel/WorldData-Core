@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "worlddata_core",
+  "version": "${version}",
+  "name": "WorldData Core",
+  "description": "A shared world data cache and read-only API for other mods. It keeps a compact copy of what Minecraft already knows about loaded chunks, blocks, fluids, biomes and light, so mods can ask Core instead of scanning the world themselves. The optional vanilla read redirect is off by default.",
+  "authors": [
+    "Rohit_1597"
+  ],
+  "contact": {},
+  "license": [
+    "LGPL-3.0-or-later",
+    "MIT"
+  ],
+  "icon": "assets/worlddata_core/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.wdc.core.core.WDCClient"
+    ],
+    "main": [
+      "net.wdc.core.core.WDCCommon",
+      "net.wdc.core.core.WDCServerObserver"
+    ]
+  },
+  "mixins": [
+    "worlddata_core.mixins.json",
+    "worlddata_core.token.mixins.json",
+    {
+      "config": "worlddata_core.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

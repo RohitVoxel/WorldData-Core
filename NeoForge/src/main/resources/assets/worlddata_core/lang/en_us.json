@@ -1,0 +1,6 @@
+{
+  "key.categories.worlddata_core": "WorldData Core",
+  "key.worlddata_core.toggle_ops_external": "Show or hide F3 ops/s: Mods to Core",
+  "key.worlddata_core.toggle_ops_internal": "Show or hide F3 ops/s: Core internal",
+  "key.worlddata_core.toggle_hot_overlay": "Show or hide hot section overlay"
+}
